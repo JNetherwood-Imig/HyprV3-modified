@@ -193,7 +193,7 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
 
     # Stage 3 - some visual tools
     echo -e "$CNT - Stage 3 - Installing theme and visual related tools and utilities, this may take a while..."
-    for SOFTWR in starship ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git 
+    for SOFTWR in fish starship ttf-jetbrains-mono-nerd noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git 
     do
         install_software $SOFTWR
     done
@@ -276,11 +276,11 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
     fi
 
     # setup the first look and feel as dark
-    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
-    xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita-dark"
-    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
-    gsettings set org.gnome.desktop.interface icon-theme "Adwaita-dark"
-    cp -f ~/.config/HyprV/backgrounds/v3-background-dark.jpg /usr/share/sddm/themes/sdt/wallpaper.jpg
+    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwita-dark"
+    xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwita-dark"
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwita-dark"
+    gsettings set org.gnome.desktop.interface icon-theme "Adwita-dark"
+    cp -f ~/.config/HyprV/backgrounds/Mountain.jpg /usr/share/sddm/themes/sdt/wallpaper.jpg
 fi
 
 ### Install the starship shell ###
